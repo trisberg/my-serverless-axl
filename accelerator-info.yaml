@@ -1,0 +1,22 @@
+id: 8d219415-b16a-4de0-af76-be672126b3d3
+timestamp: 2024-05-01T21:00:05.818Z
+source: VSCODE
+username: risbergt
+options:
+  projectName: my-serverless-axl
+  javaVersion: 21
+  deploymentType: workload
+  includeBuildToolWrapper: true
+  bsGitRepository: github.com?owner=trisberg&repo=my-serverless-axl
+  bsGitBranch: main
+accelerator:
+  name: spring-cloud-serverless-axl
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples
+    subPath: spring-cloud-serverless
+    ref: dsl-spring-cloud-serverless
+    commit: b646685198cee764a7808451e2a3cc7cc58ad674
+fragments:
+  - name: build-wrapper-maven
+  - name: java-version
+  - name: tap-workload
